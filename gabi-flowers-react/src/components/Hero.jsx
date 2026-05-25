@@ -4,14 +4,13 @@ import ever_red from '../assets/ever_red.png';
 const Hero = () => {
   return (
     <div className="relative isolate overflow-hidden bg-emerald-950 py-32 sm:py-48">
-      {/* Background Image: Fiorella */}
+
       <img
         src={ever_red}
         alt="Fiorella Flowers Background"
         className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9] scale-110"
       />
 
-      {/* Decorative Blobs */}
       <div className="absolute inset-0 -z-10 opacity-30 blur-3xl" aria-hidden="true">
         <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-400 rounded-full mix-blend-multiply animate-blob"></div>
         <div className="absolute top-0 right-0 w-96 h-96 bg-yellow-400 rounded-full mix-blend-multiply animate-blob animation-delay-2000"></div>

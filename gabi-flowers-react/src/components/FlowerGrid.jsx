@@ -6,17 +6,16 @@ import fiorella from '../assets/fiorella.png';
 import athena from '../assets/athena.png';
 import taccazi from '../assets/taccazi.png';
 
-// Fallback images since some generations failed
 const flowers = [
   { id: 1, name: 'Madam Red', image: madamRed },
   { id: 2, name: 'Ever Red', image: everRed },
   { id: 3, name: 'Fiorella', image: fiorella },
   { id: 4, name: 'Taccazi', image: taccazi },
   { id: 5, name: 'Athena', image: athena },
-  { id: 6, name: 'Adalonia', image: fiorella }, // Reusing for variety
-  { id: 7, name: 'Yellow Basanti', image: taccazi }, // Reusing for variety
-  { id: 8, name: 'Jumilia', image: madamRed }, // Reusing for variety
-  { id: 9, name: 'Lilac', image: athena }, // Reusing for variety
+  { id: 6, name: 'Adalonia', image: fiorella },
+  { id: 7, name: 'Yellow Basanti', image: taccazi },
+  { id: 8, name: 'Jumilia', image: madamRed },
+  { id: 9, name: 'Lilac', image: athena },
 ];
 
 const FlowerGrid = () => {
@@ -35,7 +34,7 @@ const FlowerGrid = () => {
           <button className="px-4 py-2 text-gray-500 font-bold text-sm hover:text-gray-900 transition-all">Exotics</button>
         </div>
       </div>
-      
+
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
         {flowers.map(flower => (
           <FlowerCard key={flower.id} {...flower} />
