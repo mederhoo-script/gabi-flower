@@ -17,6 +17,7 @@ const Navbar = () => {
           <a href="#" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Home</a>
           <a href="#" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">About Us</a>
           <a href="#" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Products</a>
+          <a href="#" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Contact</a>
           <a href="#" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Mission</a>
         </div>
 
