@@ -10,8 +10,7 @@ const Navbar = () => {
           </div>
           <div>
             <h1 className="text-xl font-bold text-white leading-none">Gabi Flowers</h1>
-            <p className="text-[10px] text-emerald-400 font-medium uppercase tracking-widest mt-1">Cultivating Excellence</p>
-          </div>
+         </div>
         </div>
 
         <div className="hidden md:flex items-center space-x-8">
