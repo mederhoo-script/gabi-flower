@@ -3,12 +3,12 @@ import ever_red from '../assets/ever_red.png';
 
 const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-emerald-950 py-32 sm:py-48">
+    <div className="relative isolate overflow-hidden bg-emerald-950 py-16 sm:py-24">
 
       <img
         src={ever_red}
         alt="Fiorella Flowers Background"
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9] scale-110"
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9]"
       />
 
       <div className="absolute inset-0 -z-10 opacity-30 blur-3xl" aria-hidden="true">
