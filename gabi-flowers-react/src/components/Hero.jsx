@@ -18,9 +18,6 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-emerald-400 uppercase bg-emerald-400/10 rounded-full border border-emerald-400/20 backdrop-blur-sm">
-          Premium Floral Collection
-        </span>
         <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
           Cultivating <span className="text-emerald-400 italic">Excellence</span> <br />
           one bloom at a time.
