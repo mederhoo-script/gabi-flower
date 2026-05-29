@@ -3,12 +3,12 @@ import ever_red from '../assets/ever_red.png';
 
 const Hero = () => {
   return (
-    <div className="relative isolate overflow-hidden bg-emerald-950 py-32 sm:py-48">
+    <div className="relative isolate overflow-hidden bg-emerald-950 py-16 sm:py-24">
 
       <img
         src={ever_red}
         alt="Fiorella Flowers Background"
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9] scale-110"
+        className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9]"
       />
 
       <div className="absolute inset-0 -z-10 opacity-30 blur-3xl" aria-hidden="true">
@@ -18,10 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        <span className="inline-block px-4 py-1.5 mb-6 text-sm font-semibold tracking-wider text-emerald-400 uppercase bg-emerald-400/10 rounded-full border border-emerald-400/20 backdrop-blur-sm">
-          Premium Floral Collection
-        </span>
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
           Cultivating <span className="text-emerald-400 italic">Excellence</span> <br />
           one bloom at a time.
         </h1>
@@ -29,14 +26,6 @@ const Hero = () => {
           From the heart of the garden to your doorstep. We bring you the finest roses and blossoms,
           carefully nurtured for beauty and longevity.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl transition-all shadow-lg shadow-emerald-500/25 hover:-translate-y-1">
-            Shop Collection
-          </button>
-          <button className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/20 backdrop-blur-sm">
-            Our Mission
-          </button>
-        </div>
       </div>
     </div>
   );

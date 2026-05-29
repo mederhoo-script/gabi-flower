@@ -23,7 +23,7 @@ const FlowerGrid = () => {
     <section className="max-w-7xl mx-auto px-6 py-24">
       <div className="flex flex-col md:flex-row items-end justify-between mb-12 gap-6">
         <div>
-          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Our Signature Collection</h2>
+          <h2 className="text-3xl font-extrabold text-gray-900 mb-4">Our Products</h2>
           <p className="text-gray-500 max-w-lg">
             Each flower is hand-selected and nurtured to ensure you receive only the most breath-taking blooms.
           </p>
