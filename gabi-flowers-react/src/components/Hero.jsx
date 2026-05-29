@@ -18,7 +18,7 @@ const Hero = () => {
       </div>
 
       <div className="relative max-w-7xl mx-auto px-6 text-center">
-        <h1 className="text-5xl md:text-7xl font-extrabold text-white mb-8 tracking-tight">
+        <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">
           Cultivating <span className="text-emerald-400 italic">Excellence</span> <br />
           one bloom at a time.
         </h1>
@@ -26,14 +26,6 @@ const Hero = () => {
           From the heart of the garden to your doorstep. We bring you the finest roses and blossoms,
           carefully nurtured for beauty and longevity.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
-          <button className="px-8 py-4 bg-emerald-500 hover:bg-emerald-400 text-white font-bold rounded-xl transition-all shadow-lg shadow-emerald-500/25 hover:-translate-y-1">
-            Shop Collection
-          </button>
-          <button className="px-8 py-4 bg-white/10 hover:bg-white/20 text-white font-bold rounded-xl transition-all border border-white/20 backdrop-blur-sm">
-            Our Mission
-          </button>
-        </div>
       </div>
     </div>
   );
