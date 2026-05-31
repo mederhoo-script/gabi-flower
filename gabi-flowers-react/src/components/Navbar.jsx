@@ -1,13 +1,15 @@
-import React from 'react';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
     <nav className="sticky top-0 z-50 bg-emerald-950/90 backdrop-blur-md border-b border-emerald-800/50 px-6 py-4">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-center space-x-2">
-          <div className="w-10 h-10 bg-emerald-500 rounded-full flex items-center justify-center transform hover:rotate-12 transition-transform duration-300">
-            <span className="text-white font-bold text-xl">G</span>
-          </div>
+          <img
+            src={logo}
+            alt="Gabi Flowers logo"
+            className="w-10 h-10 rounded-full object-cover ring-2 ring-emerald-400/60"
+          />
           <div>
             <h1 className="text-xl font-bold text-white leading-none">Gabi Flowers</h1>
          </div>

@@ -1,21 +1,26 @@
-import React from 'react';
 import FlowerCard from './FlowerCard';
-import madamRed from '../assets/madam_red.png';
-import everRed from '../assets/ever_red.png';
-import fiorella from '../assets/fiorella.png';
-import athena from '../assets/athena.png';
-import taccazi from '../assets/taccazi.png';
+import everRed from '../assets/ever-red.jpg';
+import fiorella from '../assets/fiorella.jpg';
+import goldMums from '../assets/gold-mums.jpg';
+import lollipop from '../assets/lollipop.jpg';
+import pinkRose from '../assets/pink-rose.jpg';
+import whiteMums from '../assets/white-mums.jpg';
+import whiteRoseLeaves from '../assets/white-rose+leaves.jpg';
+import whiteRose from '../assets/white-rose.jpg';
+import yellowMums from '../assets/yellow-mums.jpg';
+import yellowRose from '../assets/yellow-rose.jpg';
 
 const flowers = [
-  { id: 1, name: 'Madam Red', image: madamRed },
-  { id: 2, name: 'Ever Red', image: everRed },
+  { id: 1, name: 'Ever Red', image: everRed },
+  { id: 2, name: 'Yellow Rose', image: yellowRose },
   { id: 3, name: 'Fiorella', image: fiorella },
-  { id: 4, name: 'Taccazi', image: taccazi },
-  { id: 5, name: 'Athena', image: athena },
-  { id: 6, name: 'Adalonia', image: fiorella },
-  { id: 7, name: 'Yellow Basanti', image: taccazi },
-  { id: 8, name: 'Jumilia', image: madamRed },
-  { id: 9, name: 'Lilac', image: athena },
+  { id: 4, name: 'Golden Mums', image: goldMums },
+  { id: 5, name: 'Lollipop', image: lollipop },
+  { id: 6, name: 'Pink Rose', image: pinkRose },
+  { id: 7, name: 'White Mums', image: whiteMums },
+  { id: 8, name: 'White Rose Leaves', image: whiteRoseLeaves },
+  { id: 9, name: 'White Rose', image: whiteRose },
+  { id: 10, name: 'Yellow Mums', image: yellowMums },
 ];
 
 const FlowerGrid = () => {
@@ -35,7 +40,7 @@ const FlowerGrid = () => {
         </div>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+      <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 xl:grid-cols-6 gap-4 md:gap-6">
         {flowers.map(flower => (
           <FlowerCard key={flower.id} {...flower} />
         ))}

@@ -1,6 +1,4 @@
-import React from 'react';
-
-const FlowerCard = ({ name, image, description }) => {
+const FlowerCard = ({ name, image }) => {
   return (
     <div className="group bg-white rounded-2xl overflow-hidden border border-gray-100 shadow-sm hover:shadow-xl transition-all duration-300 hover:-translate-y-2">
       <div className="relative h-72 overflow-hidden">

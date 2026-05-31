@@ -1,15 +1,55 @@
-import React from 'react';
-import ever_red from '../assets/ever_red.png';
+import { useEffect, useRef, useState } from 'react';
+import everRed from '../assets/ever-red.jpg';
+import fiorella from '../assets/fiorella.jpg';
+import goldMums from '../assets/gold-mums.jpg';
+import pinkRose from '../assets/pink-rose.jpg';
+import whiteRose from '../assets/white-rose.jpg';
+import yellowRose from '../assets/yellow-rose.jpg';
 
 const Hero = () => {
+  const heroImages = [everRed, fiorella, goldMums, pinkRose, whiteRose, yellowRose];
+  const [activeImageIndex, setActiveImageIndex] = useState(0);
+  const slideRefs = useRef([]);
+
+  useEffect(() => {
+    const intervalId = setInterval(() => {
+      setActiveImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+    }, 4000);
+
+    return () => clearInterval(intervalId);
+  }, [heroImages.length]);
+
+  useEffect(() => {
+    slideRefs.current[activeImageIndex]?.scrollIntoView({
+      behavior: 'smooth',
+      inline: 'start',
+      block: 'nearest',
+    });
+  }, [activeImageIndex]);
+
   return (
     <div className="relative isolate overflow-hidden bg-emerald-950 py-16 sm:py-24">
+      <div className="absolute inset-0 -z-10 overflow-x-auto snap-x snap-mandatory scroll-smooth">
+        <div className="flex h-full w-full">
+          {heroImages.map((image, index) => (
+            <div
+              key={image}
+              ref={(element) => {
+                slideRefs.current[index] = element;
+              }}
+              className="h-full min-w-full snap-start"
+            >
+              <img
+                src={image}
+                alt={`Flower background ${index + 1}`}
+                className="h-full w-full object-cover object-center brightness-[0.55]"
+              />
+            </div>
+          ))}
+        </div>
+      </div>
 
-      <img
-        src={ever_red}
-        alt="Fiorella Flowers Background"
-        className="absolute inset-0 -z-10 h-full w-full object-cover object-center brightness-[0.9]"
-      />
+      <div className="absolute inset-0 -z-10 bg-black/20" aria-hidden="true"></div>
 
       <div className="absolute inset-0 -z-10 opacity-30 blur-3xl" aria-hidden="true">
         <div className="absolute top-0 left-0 w-96 h-96 bg-emerald-400 rounded-full mix-blend-multiply animate-blob"></div>
