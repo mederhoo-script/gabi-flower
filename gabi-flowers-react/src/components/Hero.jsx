@@ -6,18 +6,20 @@ import pinkRose from '../assets/pink-rose.jpg';
 import whiteRose from '../assets/white-rose.jpg';
 import yellowRose from '../assets/yellow-rose.jpg';
 
+const heroImages = [everRed, fiorella, goldMums, pinkRose, whiteRose, yellowRose];
+const heroImageCount = heroImages.length;
+
 const Hero = () => {
-  const heroImages = [everRed, fiorella, goldMums, pinkRose, whiteRose, yellowRose];
   const [activeImageIndex, setActiveImageIndex] = useState(0);
   const slideRefs = useRef([]);
 
   useEffect(() => {
     const intervalId = setInterval(() => {
-      setActiveImageIndex((prevIndex) => (prevIndex + 1) % heroImages.length);
+      setActiveImageIndex((prevIndex) => (prevIndex + 1) % heroImageCount);
     }, 4000);
 
     return () => clearInterval(intervalId);
-  }, [heroImages.length]);
+  }, []);
 
   useEffect(() => {
     slideRefs.current[activeImageIndex]?.scrollIntoView({
@@ -41,7 +43,8 @@ const Hero = () => {
             >
               <img
                 src={image}
-                alt={`Flower background ${index + 1}`}
+                alt=""
+                aria-hidden="true"
                 className="h-full w-full object-cover object-center brightness-[0.55]"
               />
             </div>
