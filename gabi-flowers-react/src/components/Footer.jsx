@@ -27,12 +27,8 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Contact</h4>
-            <p className="text-gray-300 text-sm mb-2">Phone: <a href="tel:" className="text-emerald-400">+1 234 567 890</a></p>
+            <p className="text-gray-300 text-sm mb-2">Phone: <a href="tel:" className="text-emerald-400">+***</a></p>
             <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">hello@gabiflowers.com</a></p>
-            <div className="mt-4 flex items-center gap-3">
-              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">IG</a>
-              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">FB</a>
-              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">WA</a>
             </div>
           </div>
         </div>
