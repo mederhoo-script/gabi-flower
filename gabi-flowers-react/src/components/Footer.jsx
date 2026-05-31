@@ -1,57 +1,49 @@
 import React from 'react';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
-    <footer className="bg-gray-50 border-t border-gray-100 py-16">
-      <div className="max-w-7xl mx-auto px-6">
-        <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+    <footer className="bg-gray-900 text-gray-200">
+      <div className="max-w-7xl mx-auto px-6 py-12">
+        <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-10">
           <div className="col-span-1 md:col-span-2">
-            <div className="flex items-center space-x-2 mb-6">
-              <div className="w-8 h-8 bg-emerald-600 rounded-full flex items-center justify-center">
-                <span className="text-white font-bold text-lg">G</span>
-              </div>
-              <h2 className="text-xl font-bold text-gray-900">Gabi Flowers</h2>
+            <div className="flex items-center gap-4 mb-4">
+              <img src={logo} alt="Gabi Flowers" className="h-12 w-auto" />
+              
             </div>
-            <p className="text-gray-500 max-w-sm leading-relaxed">
-              We specialize in the cultivation and delivery of premium floral arrangements. 
-              Our passion is excellence, and our mission is to bring beauty into every home.
-            </p>
+
+            <p className="text-gray-400 max-w-lg leading-relaxed">Quality is at the heart of everything we do. Our growers hand-select every stem to ensure freshness and longevity, and our delivery partners bring your order with care.</p>
           </div>
-          
+
           <div>
-            <h4 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-widest">Navigation</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Home</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Products</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Contact</a></li>
+            <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Explore</h4>
+            <ul className="space-y-3">
+              <li><a href="#" className="text-gray-300 hover:text-white">Home</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">About</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Products</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
           </div>
-          
+
           <div>
-            <h4 className="font-bold text-gray-900 mb-6 uppercase text-xs tracking-widest">Connect</h4>
-            <ul className="space-y-4">
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Instagram</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Facebook</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">Twitter</a></li>
-              <li><a href="#" className="text-gray-500 hover:text-emerald-600 transition-colors">WhatsApp</a></li>
-            </ul>
+            <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Contact</h4>
+            <p className="text-gray-300 text-sm mb-2">Phone: <a href="tel:+1234567890" className="text-emerald-400">+1 234 567 890</a></p>
+            <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">hello@gabiflowers.com</a></p>
+            <div className="mt-4 flex items-center gap-3">
+              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">IG</a>
+              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">FB</a>
+              <a href="#" className="h-9 w-9 rounded-full bg-white/5 flex items-center justify-center hover:bg-white/10">WA</a>
+            </div>
           </div>
         </div>
-        
-        <div className="pt-12 border-t border-gray-200 flex flex-col md:flex-row items-center justify-between gap-6">
-          <p className="text-gray-400 text-sm">
-            &copy; 2026 Gabi Flowers Ltd. All Rights Reserved.
-          </p>
-          <button 
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
-            className="flex items-center space-x-2 text-sm font-bold text-emerald-600 hover:text-emerald-700 transition-colors"
-          >
-            <span>Back to Top</span>
-            <svg className="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 10l7-7m0 0l7 7m-7-7v18" />
-            </svg>
-          </button>
+
+        <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
+          <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Gabi Flowers Ltd. All rights reserved.</p>
+          <div className="flex items-center gap-4">
+            <a href="#" className="text-gray-400 text-sm hover:text-white">Privacy</a>
+            <a href="#" className="text-gray-400 text-sm hover:text-white">Terms</a>
+            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-sm font-semibold text-emerald-400">Back to top</button>
+          </div>
         </div>
       </div>
     </footer>
