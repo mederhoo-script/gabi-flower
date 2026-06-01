@@ -1,4 +1,3 @@
-import React from 'react';
 import logo from '../assets/logo.png';
 
 const Footer = () => {
@@ -27,11 +26,9 @@ const Footer = () => {
 
           <div>
             <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Contact</h4>
-            <p className="text-gray-300 text-sm mb-2">Phone: <a href="tel:+" className="text-emerald-400">+***</a></p>
             <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">hello@gabiflowers.com</a></p>
             </div>
           </div>
-        </div>
 
         <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Gabi Flowers Ltd. All rights reserved.</p>
