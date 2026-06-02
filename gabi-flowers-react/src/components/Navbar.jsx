@@ -2,7 +2,7 @@ import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (
-    <nav className="z-50 bg-emerald-950/90 backdrop-blur-md border-b border-emerald-800/50 px-6 py-1">
+    <nav className="bg-emerald-950/90 backdrop-blur-md border-b border-emerald-800/50 px-6 py-1">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
         <div className="flex items-left space-x-2">
           <img src={logo} alt="Gabi Flowers logo" className="h-9 w-auto" />
