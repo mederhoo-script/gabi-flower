@@ -2,7 +2,12 @@ import React from 'react';
 
 const FlowerCard = ({ name, image, description }) => {
   return (
-    <div className="group product-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 section-animate ">
+    <a
+      href="https://flowercatalog.vercel.app/collections"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group product-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 section-animate block"
+    >
       <div className="relative h-40 overflow-hidden card-image-wrapper">
         <img 
           src={image} 
@@ -20,7 +25,7 @@ const FlowerCard = ({ name, image, description }) => {
         <h3 className="text-lg font-semibold text-gray-900 mb-1 transition-colors">{name}</h3>
         <p className="text-sm text-gray-600">{description}</p>
       </div>
-    </div>
+    </a>
   );
 };
 
