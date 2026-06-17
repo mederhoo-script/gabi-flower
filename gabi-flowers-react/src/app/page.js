@@ -1,0 +1,18 @@
+import React from 'react';
+import Navbar from '../components/Navbar';
+import Hero from '../components/Hero';
+import FlowerGrid from '../components/FlowerGrid';
+import Footer from '../components/Footer';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-[#f8fafc] font-sans selection:bg-emerald-100 selection:text-emerald-900">
+      <Navbar />
+      <main>
+        <Hero />
+        <FlowerGrid />
+      </main>
+      <Footer />
+    </div>
+  );
+}

@@ -1,6 +1,4 @@
-import React from 'react';
-
-const logo = '/assets/logo.png';
+import logo from '../assets/logo.png';
 
 const Navbar = () => {
   return (

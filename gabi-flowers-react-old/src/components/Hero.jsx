@@ -1,14 +1,10 @@
-'use client';
-
 import React, { useEffect, useRef, useState } from 'react';
-
-const yellowmum = '/assets/yellow-mums.jpg';
-const goldMums = '/assets/gold-mums.jpg';
-const yellowRose = '/assets/yellow-rose.jpg';
-const whitemum = '/assets/white-mums.jpg';
+import yellowmum from '../assets/yellow-mums.jpg';
+import goldMums from '../assets/gold-mums.jpg';
+import yellowRose from '../assets/yellow-rose.jpg';
+import whitemum from '../assets/white-mums.jpg';
 
 const images = [whitemum, yellowmum, goldMums, whitemum, yellowRose, goldMums];
-
 const Hero = () => {
   const [index, setIndex] = useState(0);
   const timeoutRef = useRef(null);

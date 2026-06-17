@@ -1,8 +1,4 @@
-'use client';
-
-import React from 'react';
-
-const logo = '/assets/logo.png';
+import logo from '../assets/logo.png';
 
 const Footer = () => {
   return (
@@ -12,6 +8,7 @@ const Footer = () => {
           <div className="col-span-1 md:col-span-2">
             <div className="flex items-center gap-4 mb-4">
               <img src={logo} alt="Gabi Flowers" className="h-12 w-auto" />
+              
             </div>
 
             <p className="text-gray-400 max-w-lg leading-relaxed">Quality is at the heart of everything we do. Our growers hand-select every stem to ensure freshness and longevity, and our delivery partners bring your order with care.</p>
@@ -30,8 +27,8 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Contact</h4>
             <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">Email</a></p>
+            </div>
           </div>
-        </div>
 
         <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Gabi Flowers Ltd. All rights reserved.</p>

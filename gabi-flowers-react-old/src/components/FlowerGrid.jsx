@@ -1,12 +1,11 @@
 import React from 'react';
 import FlowerCard from './FlowerCard';
-
-const pinkRose = '/assets/pink-rose.jpg';
-const everRed = '/assets/ever-red.jpg';
-const fiorella = '/assets/fiorella.jpg';
-const whiteRose = '/assets/white-rose.jpg';
-const yellowRose = '/assets/yellow-rose.jpg';
-const goldMums = '/assets/gold-mums.jpg';
+import pinkRose from '../assets/pink-rose.jpg';
+import everRed from '../assets/ever-red.jpg';
+import fiorella from '../assets/fiorella.jpg';
+import whiteRose from '../assets/white-rose.jpg';
+import yellowRose from '../assets/yellow-rose.jpg';
+import goldMums from '../assets/gold-mums.jpg';
 
 const flowers = [
   { id: 1, name: 'Pink Rose', image: pinkRose, price: 12, description: 'Delicate pink petals, long-lasting stem.' },
@@ -33,10 +32,10 @@ const FlowerGrid = () => {
         </div>
       </header>
 
-      {/* Centered subtitle to match example */}
-      <div className="w-full text-center mb-6">
-        <h3 className="text-lg text-green-700 font-semibold">Fresh Flowers</h3>
-      </div>
+        {/* Centered subtitle to match example */}
+        <div className="w-full text-center mb-6">
+          <h3 className="text-lg text-green-700 font-semibold">Fresh Flowers</h3>
+        </div>
 
       <section id="today" className="mb-10">
         <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
