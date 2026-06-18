@@ -13,7 +13,7 @@ const Footer = () => {
               <img src={logo} alt="Gabi Flowers" className="h-12 w-auto" />
             </div>
 
-            <p className="text-gray-400 max-w-lg leading-relaxed">Quality is at the heart of everything we do. Our growers hand-select every stem to ensure freshness and longevity, and our delivery partners bring your order with care.</p>
+            <p className="text-gray-400 max-w-lg leading-relaxed">Quality is at the heart of everything we do. Our growers hand select every stem to ensure freshness and longevity, and our delivery partners bring your order with care.</p>
           </div>
 
           <div>
