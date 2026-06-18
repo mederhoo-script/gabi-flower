@@ -1,8 +1,20 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 
 const logo = '/assets/logo.png';
 
 const Navbar = () => {
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+  const toggleMenu = () => {
+    setIsMenuOpen(!isMenuOpen);
+  };
+
+  const closeMenu = () => {
+    setIsMenuOpen(false);
+  };
+
   return (
     <nav className="bg-emerald-950/90 backdrop-blur-md border-b border-emerald-800/50 px-6 py-1">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
@@ -19,13 +31,25 @@ const Navbar = () => {
         </div>
 
         <div className="flex items-center md:hidden">
-          <button className="md:hidden p-2 text-emerald-100">
+          <button onClick={toggleMenu} className="p-2 text-emerald-100">
             <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
             </svg>
           </button>
         </div>
       </div>
+
+      {isMenuOpen && (
+        <div className="md:hidden bg-emerald-900/95 border-t border-emerald-800/50">
+          <div className="px-6 py-4 space-y-3">
+            <a href="/" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Home</a>
+            <a href="/about" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">About</a>
+            <a href="/shop" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Shop</a>
+            <a href="/contact" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Contact</a>
+            <a href="/mission" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Mission</a>
+          </div>
+        </div>
+      )}
     </nav>
   );
 };
