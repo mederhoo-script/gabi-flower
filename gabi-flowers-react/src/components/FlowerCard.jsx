@@ -1,31 +1,28 @@
 import React from 'react';
+import Link from 'next/link';
 
-const FlowerCard = ({ name, image, description }) => {
+const FlowerCard = ({ id, name, image, shortDescription, category }) => {
   return (
-    <a
-      href="https://flowercatalog.vercel.app/collections"
-      target="_blank"
-      rel="noopener noreferrer"
-      className="group product-card bg-white rounded-2xl overflow-hidden border border-gray-200 shadow transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 section-animate block"
+    <Link
+      href={`/shop/${id}`}
+      aria-label={`View details for ${name}`}
+      className="group product-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm transition-transform duration-300 hover:shadow-lg hover:-translate-y-1 section-animate block"
     >
       <div className="relative h-40 overflow-hidden card-image-wrapper">
-        <img 
-          src={image} 
-          alt={name} 
-          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500 rounded-2xl"
+        <img
+          src={image}
+          alt={`${name} — ${category} bouquet`}
+          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-500"
         />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/35 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 flex items-end">
-          <div className="w-full p-4 text-left text-white">
-            <h3 className="text-lg font-semibold leading-tight">{name}</h3>
-            <p className="text-sm opacity-90 mt-1">{description}</p>
-          </div>
-        </div>
+        <span className="absolute left-4 top-4 rounded-full bg-white/90 px-3 py-1 text-xs font-semibold text-slate-700 shadow-sm">
+          {category}
+        </span>
       </div>
-      <div className="p-4 text-center">
-        <h3 className="text-lg font-semibold text-gray-900 mb-1 transition-colors">{name}</h3>
-        <p className="text-sm text-gray-600">{description}</p>
+      <div className="p-5 text-center">
+        <h3 className="text-xl font-semibold text-slate-900 mb-2">{name}</h3>
+        <p className="text-sm text-slate-600">{shortDescription}</p>
       </div>
-    </a>
+    </Link>
   );
 };
 

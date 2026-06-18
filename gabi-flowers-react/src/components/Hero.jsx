@@ -52,12 +52,12 @@ const Hero = () => {
           <img
             key={i}
             src={src}
-            alt={`slide-${i}`}
+            alt={`Flower hero slide ${i + 1}`}
             className={`absolute inset-0 w-full h-full object-cover object-center transition-opacity duration-700 ${i === index ? 'opacity-100' : 'opacity-0'}`}
           />
         ))}
 
-        <div className="absolute inset-0 bg-gradient-to-b from-black/30 via-transparent to-black/40 pointer-events-none" />
+        <div className="absolute inset-0 bg-linear-to-b from-black/30 via-transparent to-black/40 pointer-events-none" />
 
         <div className="relative z-10 max-w-7xl mx-auto px-6 py-24 text-center">
           <h1 className="text-3xl md:text-5xl font-extrabold text-white mb-6 tracking-tight">

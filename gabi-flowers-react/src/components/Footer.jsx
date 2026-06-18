@@ -1,6 +1,5 @@
-'use client';
-
 import React from 'react';
+import BackToTop from './BackToTop';
 
 const logo = '/assets/logo.png';
 
@@ -20,25 +19,26 @@ const Footer = () => {
           <div>
             <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Explore</h4>
             <ul className="space-y-3">
-              <li><a href="#" className="text-gray-300 hover:text-white">Home</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">About</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Products</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-white">Contact</a></li>
+              <li><a href="/" className="text-gray-300 hover:text-white">Home</a></li>
+              <li><a href="/about" className="text-gray-300 hover:text-white">About</a></li>
+              <li><a href="/shop" className="text-gray-300 hover:text-white">Shop</a></li>
+              <li><a href="/contact" className="text-gray-300 hover:text-white">Contact</a></li>
             </ul>
           </div>
 
           <div>
             <h4 className="font-semibold text-white mb-4 uppercase text-xs tracking-widest">Contact</h4>
-            <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">Email</a></p>
+            <p className="text-gray-300 text-sm">Email: <a href="mailto:hello@gabiflowers.com" className="text-emerald-400">email</a></p>
+            <p className="text-gray-300 text-sm mt-2">Phone: <a href="tel:+1234567890" className="text-emerald-400">phone</a></p>
           </div>
         </div>
 
         <div className="pt-6 border-t border-gray-800 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-gray-500 text-sm">&copy; {new Date().getFullYear()} Gabi Flowers Ltd. All rights reserved.</p>
-          <div className="flex items-center gap-4">
-            <a href="#" className="text-gray-400 text-sm hover:text-white">Privacy</a>
-            <a href="#" className="text-gray-400 text-sm hover:text-white">Terms</a>
-            <button onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })} className="text-sm font-semibold text-emerald-400">Back to top</button>
+          <div className="flex flex-wrap items-center gap-4">
+            <a href="/privacy" className="text-gray-400 text-sm hover:text-white">Privacy</a>
+            <a href="/terms" className="text-gray-400 text-sm hover:text-white">Terms</a>
+            <BackToTop />
           </div>
         </div>
       </div>
