@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="hidden md:flex items-center space-x-8 ml-auto">
           <a href="/" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Home</a>
           <a href="/about" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">About</a>
-          <a href="/shop" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Shop</a>
+          <a href="/shop" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Products</a>
           <a href="/contact" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Contact</a>
           <a href="/mission" className="text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Mission</a>
         </div>
@@ -44,7 +44,7 @@ const Navbar = () => {
           <div className="px-6 py-4 space-y-3">
             <a href="/" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Home</a>
             <a href="/about" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">About</a>
-            <a href="/shop" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Shop</a>
+            <a href="/shop" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Products</a>
             <a href="/contact" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Contact</a>
             <a href="/mission" onClick={closeMenu} className="block text-sm font-semibold text-emerald-100/70 hover:text-white transition-colors">Mission</a>
           </div>
